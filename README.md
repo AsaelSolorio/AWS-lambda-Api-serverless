@@ -6,9 +6,10 @@
  ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to AWS Cloud9!
+we are going to create a simple REST API using flask in AWS Cloud9 for query and creation of
+products.
+we will use AWS-Dynamodb as database.
+We are going to use AWS LAMBDA to create a function with the POST method
+and AWS API-GATEWAY for the api methods through INDOMNIA/POSTMAN
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
 
-Happy coding!
