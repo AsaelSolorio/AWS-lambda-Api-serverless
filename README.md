@@ -32,26 +32,22 @@ We will be using the HTTP methods through Insomnia requests
 - DELETE
 
 We will be using the HTTP POST method through AWS-Lambda.
+set up  services for the application
+-Dynamo DB
+-IAM policies fro the user
+-Lambda Function:
+-API Gateway:
 
 
-Check data and info inside Docker Hub and ECR-AWS
-
-# AWS-container-api-Flask
-We are going to Create an API-REST Container in AWS Cloud9 and Publish to Docker Hub and Push to ECR-AWS
-
-## This API-REST is developed for Linux-alpine Architecture
-if you want to use it for Ubuntu distribution replace the next commands
-``` batch
-sudo apk add == sudo apt install 
-```
 
 next, create a virtual venv
 ``` batch
 python -m venv venv
 source venv/bin/activate
 ```
-next, you go to Flask_CRUD folder where you can scaffold the Makefile to install all the libraries
+next, you can scaffold the Makefile to install all the libraries
 ``` batch
-cd Flask_CRUD
 make install
 ```
+
+
