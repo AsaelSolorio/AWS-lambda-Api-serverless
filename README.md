@@ -13,3 +13,4 @@ We are going to use AWS LAMBDA to create a function with the POST method
 and AWS API-GATEWAY for the api methods through INDOMNIA/POSTMAN
 
 
+![image](https://github.com/AsaelSolorio/AWS-lambda-Api-serverless/assets/112660076/d3938378-f0b5-4baf-8c64-e9e6dccd08ae)
