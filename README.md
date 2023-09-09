@@ -49,5 +49,34 @@ next, you can scaffold the Makefile to install all the libraries
 ``` batch
 make install
 ```
+This is the code for Lambda function to only modify and action the POST method in the API-REST
+``` batch
+import json
+import boto3
 
+dynamodb = boto3.resource('dynamodb')
+table_name = 'products'
+table = dynamodb.Table(table_name)
+
+def lambda_handler(event, context):
+    print("Received event:", json.dumps(event, indent=2))
+
+    try:
+        # Access the JSON request body
+        request_body = json.loads(event['body'])
+
+        # Store data in DynamoDB
+        response = table.put_item(Item=request_body)
+
+        return {
+            'statusCode': 200,
+            'body': json.dumps('Data added to DynamoDB')
+        }
+    except Exception as e:
+        return {
+                'statusCode': 500,
+                'body': json.dumps('Error: ' + str(e))
+            }
+
+```
 
