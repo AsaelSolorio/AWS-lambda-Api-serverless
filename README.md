@@ -10,7 +10,7 @@ we are going to create a simple REST API using flask in AWS Cloud9 for query and
 products.
 we will use AWS-Dynamodb as database.
 We are going to use AWS LAMBDA to create a function with the POST method
-and AWS API-GATEWAY for the api methods through INDOMNIA/POSTMAN
+and AWS API-GATEWAY for the api methods through INSOMNIA/POSTMAN
 
 
 ![image](https://github.com/AsaelSolorio/AWS-lambda-Api-serverless/assets/112660076/d3938378-f0b5-4baf-8c64-e9e6dccd08ae)
@@ -34,13 +34,13 @@ We will be using the HTTP methods through Insomnia requests
 We will be using the HTTP POST method through AWS-Lambda.
 set up  services for the application
 -Dynamo DB
--IAM policies fro the user
--Lambda Function:
--API Gateway:
+-IAM policies for the user/developer
+-Lambda Function
+-API Gateway
 
 
 
-next, create a virtual venv
+Next, create a virtual venv
 ``` batch
 python -m venv venv
 source venv/bin/activate
